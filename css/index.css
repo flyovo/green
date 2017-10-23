@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'NotoSansCJKkr-Bold';
+  src: url('../font/NotoSansCJKkr-Bold.otf');
+}
+@font-face {
+  font-family: 'NotoSansCJKkr-Medium';
+  src: url('../font/NotoSansCJKkr-Medium.otf');
+}
+@font-face {
+  font-family: 'NotoSansCJKkr-Regular';
+  src: url('../font/NotoSansCJKkr-Regular.otf');
+}
+
+nav {
+  background: none;
+  z-index: 10;
+  min-height: 65px;
+}
+.nav-bar {
+  padding: 24px 35px 24px 35px;
+}
+.menu > li {
+  float: left;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+ul, ol {
+  list-style: none;
+}
