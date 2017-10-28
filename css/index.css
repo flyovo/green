@@ -10,10 +10,15 @@
   font-family: 'NotoSansCJKkr-Regular';
   src: url('../font/NotoSansCJKkr-Regular.otf');
 }
-
-body {
-  margin: 0px;
+@font-face {
+  font-family: 'DroidSerif-Bold';
+  src: url('../font/DroidSerif-Bold.ttf');
 }
+@font-face {
+  font-family: 'LibreFranklin-Medium';
+  src: url('../font/LibreFranklin-Medium.ttf');
+}
+/*
 .nav-container {
   position: absolute;
   width: 100%;
@@ -76,4 +81,122 @@ a, a:visited{
   .visible-toggle {
     display: block;
   }
+}*/
+
+@media (min-width: 1680px){
+  .container {
+    width: 1354px;
+  }
 }
+.img-left, .img-right {
+  text-align: center;
+}
+.boxed .title .title_sub{
+  font-family: NotoSansCJKkr-Bold;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #000000;
+}
+.boxed .title .title_sub{
+  font-size: 20px;
+  line-height: 2.5;
+}
+.boxed .title .title_main{
+  font-size: 40px;
+  line-height: 1.25;
+}
+.boxed p{
+  font-family: NotoSansCJKkr-Regular;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #000000;
+  line-height: 1.5em;
+}
+.boxed img {
+  margin-bottom: 0;
+}
+.Rectangle-2 {
+  width: 76px;
+  height: 74px;
+  background-color: #50bb14;
+  position: absolute;
+  top: -37px;
+  left: -25px;
+  z-index: -10;
+}
+#process{
+  text-align: left;
+  color: #ffffff;
+  color: var(--white);
+}
+#process h3{
+  font-family: DroidSerif-Bold;
+  font-size: 48px;
+  margin-bottom: 0.25em;
+}
+#process h4{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  margin-bottom: 8px;
+}
+#process h5 {
+  font-family: NotoSansCJKkr-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  color: #8ed367;
+  margin-bottom: 6px;
+}
+#process:not(.txt_sub) p{
+  font-family: NotoSansCJKkr-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: -0.5px;
+}
+#process .row img, #process .line {
+  margin-bottom: 17px;
+}
+#process .line{
+  width: 160px;
+  height: 2px;
+  border: solid 1px;
+  color: #ffffff;
+  margin-top: 14px;
+}
+#process .txt_sub p {
+  font-family: NotoSansCJKkr-Regular;
+  opacity: 0.7;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+footer{
+  background-color: #efedf0;
+  font-family: NotoSansCJKkr-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.5;
+  text-align: left;
+  color: #000000;
+  padding: 40px 0 30px 0 !important;
+}
+footer img{
+  float: right;
+  max-height: 100% !important;
+}
+footer .companyinfo div{
+  margin-left: 50px;
+}
+footer .type--fine-print{
+  font-family: LibreFranklin-Medium;
+  font-size: 11px;
+  line-height: 2.73;
+  color: #adb5bd;
+}
+/*.\- .text-style-1 {
+  line-height: 2;
+}
+
+.\- .text-style-2 {
+}*/
