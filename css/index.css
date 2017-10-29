@@ -19,6 +19,16 @@
   src: url('../font/LibreFranklin-Medium.ttf');
 }
 
+::-webkit-scrollbar {
+  background-color: #e9ecef;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:window-inactive {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #d9dadb;
+}
 
 .nav-container {
   position: absolute;
@@ -44,12 +54,22 @@ nav {
   font-size: 15px;
   text-align: center;
 }
-.btn_primary {
+nav .btn_primary {
   padding: 10px 26px !important;
   background-color: #50bb14;
   border-radius: 39px;
 }
-
+footer .btn_primary {
+  width: 207px;
+  height: 43px;
+  padding: 12px 52px !important;
+  background-color: #50bb14;
+  border-radius: 39px;
+  font-family: NotoSansCJKkr-Bold;
+  font-size: 12px;
+  color: #ffffff !important;
+  color: var(--white);
+}
 .visible-toggle {
   display: none !important;
 }
@@ -153,6 +173,15 @@ nav {
   position: inherit;
   top: -100px;
 }
+.slide_title{
+  font-family: NotoSansCJKkr-Regular;
+  font-size: 20px;
+  text-align: left;
+  color: #ffffff !important;
+  color: var(--white);
+  margin-top: 13px;
+  margin-left: 22px;
+}
 .Rectangle {
   width: 227px;
   height: 134px;
@@ -170,6 +199,7 @@ nav {
 }
 #Safe-for-Delicate-Fa {
   padding-top: 0px;
+  position: relative;
 }
 #Safe-for-Delicate-Fa h3 {
   font-family: DroidSerif-Bold;
@@ -189,9 +219,8 @@ nav {
 }
 #Safe-for-Delicate-Fa img {
   position: absolute;
-  /*top: -145px;*/
-  top: 575px;
-  right: 30px;
+  top: -255px;
+  right: 10px;
 }
 .boxed .title .title_sub{
   font-family: NotoSansCJKkr-Bold;
@@ -243,26 +272,19 @@ nav {
   white-space: nowrap;
   display: -webkit-box;
 }
-::-webkit-scrollbar {
+.has-scroll::-webkit-scrollbar {
   background-color: #e9ecef;
   height: 3px;
 }
-::-webkit-scrollbar-thumb,
-::-webkit-scrollbar-thumb:window-inactive {
+.has-scroll::-webkit-scrollbar-thumb,
+.has-scroll::-webkit-scrollbar-thumb:window-inactive {
   background-color: #50bb14;
+  -webkit-box-shadow: unset;
 }
-::-webkit-scrollbar-thumb:hover {
+.has-scroll::-webkit-scrollbar-thumb:hover {
   background-color: #50bb14;
   cursor: pointer;
 }
-
-
-.scrollcontent2-content { width: 999px; }
-.scrollcontent2-bar { height: 3px; background: #e9ecef; overflow: hidden; }
-.scrollcontent2-drag { background: #50bb14; cursor: pointer; }
-.scrollcontent2-content p { margin:0; padding:0 }
-
-
 .scroll-table{
   display: -webkit-box;
 }

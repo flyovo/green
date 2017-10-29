@@ -131,10 +131,10 @@
        </ul>
     </section>
     <section id="Safe-for-Delicate-Fa" class="space--sm features features-9">
+      <div class="right">
+        <img alt="pic" src="image/map.png">
+      </div>
       <div class="container">
-        <div class="img-right">
-          <img alt="pic" src="image/map.png">
-        </div>
         <div class="row">
           <div class="col-sm-12 features__avatar">
             <h3 class="title">
@@ -219,58 +219,42 @@
              <div class="col-md-6 col-sm-12 features__avatar">
                <div class="has-scroll">
                  <div class="scroll-table">
-
-
-                 <!-- <ul>
-                   <li> -->
                      <a class="item" data-toggle="modal" href="#item1">
                        <div class="item__image">
                          <img src="image/product-01.png"/>
                        </div>
                        <div class="item__txt">대표품목</div>
                      </a>
-                   <!-- </li>
-                   <li> -->
                      <a class="item" data-toggle="modal" href="#item2">
                        <div class="item__image">
                          <img src="image/product-02.png"/>
                        </div>
                        <div class="item__txt">아우터</div>
                      </a>
-                   <!-- </li>
-                   <li> -->
                      <a class="item" data-toggle="modal" href="#item3">
                        <div class="item__image">
                          <img src="image/product-03.png"/>
                        </div>
                        <div class="item__txt">특수 소재/ 의류</div>
                      </a>
-                   <!-- </li>
-                   <li> -->
                      <a class="item" data-toggle="modal" href="#item4">
                        <div class="item__image">
                          <img src="image/product-04.png"/>
                        </div>
                        <div class="item__txt">가방 / 신발</div>
                      </a>
-                   <!-- </li>
-                   <li> -->
                      <a class="item" data-toggle="modal" href="#item5">
                        <div class="item__image">
                          <img src="image/product-05.png"/>
                        </div>
                        <div class="item__txt">명품</div>
                      </a>
-                   <!-- </li>
-                   <li> -->
                      <a class="item" data-toggle="modal" href="#item6">
                        <div class="item__image">
                          <img src="image/product-06.png"/>
                        </div>
                        <div class="item__txt">침구류</div>
                      </a>
-                   <!-- </li>
-                   <li> -->
                      <a class="item" data-toggle="modal" href="#item7">
                        <div class="item__image">
                          <img src="image/product-07.png"/>
@@ -278,18 +262,13 @@
                        <div class="item__txt">
                            카펫, 커튼류<br />(대형 세탁)</div>
                      </a>
-                   <!-- </li>
-                   <li> -->
                      <a class="item" data-toggle="modal" href="#item8">
                        <div class="item__image">
                          <img src="image/product-08.png"/>
                        </div>
                        <div class="item__txt">소품류</div>
                      </a>
-                   <!-- </li>
-                 </ul> -->
-                </div>
-
+                 </div>
                </div>
              </div>
           </div>
@@ -412,8 +391,12 @@
              </div>
           </div>
           <div class="col-md-3 text-left text-center-xs">
-             <ul class="social-list">
-                <li></li>
+             <ul>
+                <li>
+                  <a class="btn_primary" href="#" target="_blank">
+                    <span>그린어스에 문의하기</span>
+                  </a>
+                </li>
              </ul>
           </div>
        </div>
@@ -554,9 +537,37 @@
   <script src="js/parallax.js"></script>
   <script src="js/scripts.js"></script>
   <script>
-  // 글로벌 브랜드
-  // 프리미엄 세탁 서비스
-  // B2B 서비스
+    var temp = ['글로벌 브랜드','프리미엄 세탁 서비스','B2B 서비스'];
+    // var test = function(){
+    //   for(var i=0; i < $('.owl-dot').length; i++){
+    //     var $dot = $('.owl-dot').eq(i);
+    //     if($dot.hasClass('active')){
+    //       $('.slide_title').text(temp[i]);
+    //     }
+    //   }
+    // }
+    $(window).on('load', function(){
+      $('.owl-controls').append('<div class="slide_title">글로벌 브랜드</div>');
+
+      $('.owl-dot').on('click',function(){
+        var i = $('.owl-dot').index(this);
+        $('.slide_title').text(temp[i]);
+      })
+    })
+    $(function(){
+      $('.owl-dots').on('change', function(){
+        console.log('now1')
+        console.log($('.owl-dot').index($(document).find('.owl-dots .active')));
+      })
+      $('.owl-dots').on('DOMAttrModified', function() {
+        console.log('now2')
+        console.log($('.owl-dot').index($(document).find('.owl-dots .active')));
+      });
+      $(".owl-dot").on('DOMNodeInserted', function(){
+        console.log('now3')
+        console.log($('.owl-dot').index($(document).find('.owl-dots .active')));
+      });
+    })
   </script>
 </body>
 </html>
