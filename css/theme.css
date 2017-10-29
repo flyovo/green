@@ -1327,7 +1327,7 @@ nav {
   padding: 0 1em;
 }
 .nav-bar .nav-module > a:not(.btn) {
-  height: 100%;
+  /*height: 100%;*/
   display: inline-block;
 }
 .nav-bar.nav--fixed {
