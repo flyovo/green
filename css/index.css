@@ -7,6 +7,10 @@
   src: url('../font/NotoSansCJKkr-Medium.otf');
 }
 @font-face {
+  font-family: 'NotoSansCJKkr-DemiLight';
+  src: url('../font/NotoSansCJKkr-DemiLight.otf');
+}
+@font-face {
   font-family: 'NotoSansCJKkr-Regular';
   src: url('../font/NotoSansCJKkr-Regular.otf');
 }
@@ -29,17 +33,38 @@
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #d9dadb;
 }
-
-.nav-container {
+#landing .nav-container {
   position: absolute;
   width: 100%;
   font-family: 'NotoSansCJKkr-Bold';
   font-size: 15px;
 }
-nav {
+#landing nav {
   background: none;
   z-index: 10;
   min-height: 65px;
+  /*min-height: 80px;*/
+}
+.logo-module a:hover{
+  cursor: pointer;
+}
+#b2b .nav-container {
+  width: 100%;
+  font-family: 'NotoSansCJKkr-Bold';
+  font-size: 15px;
+}
+#b2b nav {
+  background-color: #323b35;
+  z-index: 10;
+  min-height: 65px;
+  /*min-height:80px;*/
+}
+#b2b .line a {
+  /*text-decoration: underline;
+  text-decoration-color: #50bb14;
+  text-decoration-style: solid 3px;*/
+  /*padding-top: 3px;*/
+  border-bottom: solid 1px #50bb14;
 }
 .nav-bar {
   padding: 0 50px 0 35px;
@@ -53,6 +78,9 @@ nav {
   font-family: NotoSansCJKkr-Bold;
   font-size: 15px;
   text-align: center;
+}
+.menu > li:hover > a {
+  opacity: 1;
 }
 nav .btn_primary {
   padding: 10px 26px !important;
@@ -467,4 +495,67 @@ footer .type--fine-print{
 .modal-content .modal-body p{
   font-size: 14px;
   margin-bottom: 0;
+}
+
+#b2b section:not(.except-md){
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#b2b .boxed,
+#b2b img{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#b2b #icon_left{
+  position: relative;
+  top: -24px;
+}
+#b2b .title{
+  font-family: DroidSerif-Bold;
+  font-size: 40px;
+  text-align: left;
+  color: #000000;
+}
+#b2b .except-md p{
+  font-family: NotoSansCJKkr-Regular;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 1.36;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #000000;
+}
+#b2b .col-md-6 {
+  padding-right: 0;
+  padding-left: 0;
+}
+#b2b .boxed h4{
+  font-family: NotoSansCJKkr-DemiLight;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.07;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #000000;
+}
+#b2b .boxed p{
+  font-family: NotoSansCJKkr-DemiLight;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.67;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #000000;
+}
+.Rectangle-4 {
+  width: 100px;
+  height: 5px;
+  background-color: #50bb14;
+  margin-top: 88px;
+  margin-bottom: 11px;
+}
+.even{
+  padding-right: 0;
+  /*padding-left: 224px;*/
+  padding-left: 16em;
 }
