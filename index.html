@@ -29,10 +29,10 @@
               <div class="nav-module menu-module right">
                   <ul class="menu">
                       <li>
-                          <a href="#">ABOUT US</a>
+                          <a href="index.html">ABOUT US</a>
                       </li>
-                      <li>
-                          <a href="b2b.html">사업제휴</a>
+                      <li class="line">
+                          <a href="b2b.html"><span>사업제휴</span></a>
                       </li>
                       <li>
                          <a class="btn_primary" href="#" target="_blank">
@@ -48,7 +48,7 @@
       </nav>
   </div>
   <div class="main-container">
-    <section class="slider slider--animate height-60 cover cover-5 parallax" data-arrows="true" data-paging="true" data-timing="100000">
+    <section class="slider slider--animate height-90 cover cover-5 parallax" data-arrows="true" data-paging="true" data-timing="7000">
        <ul class="slides">
          <li class="imagebg" data-overlay="2">
             <div class="background-image-holder">
@@ -274,7 +274,7 @@
           </div>
        </div>
     </section>
-    <section id="process" class="features features-6 imagebg height-70" data-overlay="7">
+    <section id="process" class="features features-6 imagebg height-100" data-overlay="7">
        <div class="background-image-holder">
           <img alt="image" src="image/process-bg.png">
        </div>
@@ -378,7 +378,9 @@
              <ul>
                 <li>
                    상호명: 그린어스코리아 유한회사 / 대표이사: 박종성 / 소재지: (우편번호 06302) 서울특별시 강남구 논현로 134 연산MS 503호
-                   ( <a target='_blank' href='http://naver.me/FeG292Cp' style='text-decoration: none;'>지도보기</a> )
+                   <a target='_blank' href='http://naver.me/GUzaTZxX' class="Rectangle-3">
+                     <span>지도보기</span>
+                   </a>
                 </li>
                 <li>
                    사업자등록번호: 870-88-00334 / 대표전화: 1661-0844 / 팩스: 02-577-0845 / 고객지원: <a href='mailto:support@greenearthkorea.co.kr'>support@greenearthkorea.co.kr</a>
@@ -537,35 +539,16 @@
   <script src="js/parallax.js"></script>
   <script src="js/scripts.js"></script>
   <script>
-    var temp = ['글로벌 브랜드','프리미엄 세탁 서비스','B2B 서비스'];
-    // var test = function(){
-    //   for(var i=0; i < $('.owl-dot').length; i++){
-    //     var $dot = $('.owl-dot').eq(i);
-    //     if($dot.hasClass('active')){
-    //       $('.slide_title').text(temp[i]);
-    //     }
-    //   }
-    // }
     $(window).on('load', function(){
       $('.owl-controls').append('<div class="slide_title">글로벌 브랜드</div>');
-
-      $('.owl-dot').on('click',function(){
-        var i = $('.owl-dot').index(this);
-        $('.slide_title').text(temp[i]);
-      })
     })
     $(function(){
-      $('.owl-dots').on('change', function(){
-        console.log('now1')
-        console.log($('.owl-dot').index($(document).find('.owl-dots .active')));
-      })
-      $('.owl-dots').on('DOMAttrModified', function() {
-        console.log('now2')
-        console.log($('.owl-dot').index($(document).find('.owl-dots .active')));
-      });
-      $(".owl-dot").on('DOMNodeInserted', function(){
-        console.log('now3')
-        console.log($('.owl-dot').index($(document).find('.owl-dots .active')));
+      var temp = ['글로벌 브랜드','프리미엄 세탁 서비스','B2B 서비스'];
+      var owl = $('.owl-carousel');
+      owl.owlCarousel();
+      owl.on('changed.owl.carousel', function(event) {
+          var i = $('.owl-dot').index($(document).find('.owl-dots .active'));
+          $('.slide_title').text(temp[i]);
       });
     })
   </script>
