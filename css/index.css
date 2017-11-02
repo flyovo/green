@@ -35,6 +35,8 @@
 }
 body {
   background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .container {
   padding-right: 0px;
@@ -83,7 +85,7 @@ body {
   padding-bottom: 8px;
   margin-left: 10px;
   color: #ffffff;
-  font-family: NotoSansCJKkr-Bold;
+  font-family: 'NotoSansCJKkr-Bold';
   font-size: 15px;
   text-align: center;
 }
@@ -113,7 +115,7 @@ body {
 .btn_primary {
   background-color: #50bb14;
   border-radius: 39px;
-  font-family: NotoSansCJKkr-Bold;
+  font-family: 'NotoSansCJKkr-Bold';
   font-size: 12px;
   color: #ffffff !important;
   color: var(--white);
@@ -134,16 +136,11 @@ footer .btn_primary {
 .nav-mobile-toggle i {
   color: #ffffff;
 }
-@media (min-width: 1680px){
-  .container {
-    width: 1354px;
-  }
-}
 .img-left, .img-right {
   text-align: center;
 }
 .container h1{
-  font-family: NotoSansCJKkr-bold;
+  font-family: 'NotoSansCJKkr-Bold';
   font-size: 48px;
   line-height: 1.27;
   letter-spacing: -0.5px;
@@ -153,11 +150,12 @@ footer .btn_primary {
   margin-bottom: 0;
 }
 .container h1 .fontEng{
-  font-family: DroidSerif-Bold;
-  font-size: 36px;
+  font-family: 'DroidSerif-Bold';
+  /*font-size: 36px;*/
   line-height: 1.69;
   letter-spacing: normal;
 }
+
 #icon_left_01{
   position: inherit;
   left: -20px;
@@ -174,7 +172,7 @@ footer .btn_primary {
   top: -17px;
 }
 .lead {
-  font-family: NotoSansCJKkr-Medium;
+  font-family: 'NotoSansCJKkr-Medium';
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -0.4px;
@@ -197,16 +195,16 @@ footer .btn_primary {
   position: absolute;
 }
 .Rectangle-9 p{
-  font-family: NotoSansCJKkr-Regular;
-  font-size: 24px;
+  font-family: 'NotoSansCJKkr-Regular';
+  /*font-size: 24px;*/
   line-height: 1.25;
   letter-spacing: -0.5px;
   text-align: center;
   margin-bottom: 0;
 }
 .Rectangle-9 p .fontEng{
-  font-family: DroidSerif-Bold;
-  font-size: 24px;
+  font-family: 'DroidSerif-Bold';
+  /*font-size: 24px;*/
   line-height: 0.67;
   margin-bottom: 14px;
   display: block;
@@ -235,7 +233,7 @@ footer .btn_primary {
   top: -100px;
 }
 .slide_title{
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   font-size: 20px;
   text-align: left;
   color: #ffffff !important;
@@ -249,28 +247,28 @@ footer .btn_primary {
   background-color: #50bb14;
   box-shadow: 3px 6px 12px 0 rgba(0, 0, 0, 0.16);
 }
-#Rectangle-9_01{
+/*#Rectangle-9_01{
    left: -20px;
-}
-#Rectangle-9_02{
+}*/
+/*#Rectangle-9_02{
    left: 170px;
 }
 #Rectangle-9_03{
    left: 400px;
-}
+}*/
 #Safe-for-Delicate-Fa {
   padding-top: 0px;
   position: relative;
 }
 #Safe-for-Delicate-Fa h3 {
-  font-family: DroidSerif-Bold;
+  font-family: 'DroidSerif-Bold';
   font-size: 44px;
   text-align: left;
   color: #50bb14;
   /*padding-top: 0.86em;*/
 }
 #Safe-for-Delicate-Fa p {
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   font-size: 17px;
   font-weight: 500;
   line-height: 1.65;
@@ -284,7 +282,7 @@ footer .btn_primary {
   right: 10px;
 }
 .boxed .title .title_sub{
-  font-family: NotoSansCJKkr-Bold;
+  font-family: 'NotoSansCJKkr-Bold';
   letter-spacing: -0.5px;
   text-align: left;
   color: #000000;
@@ -296,17 +294,17 @@ footer .btn_primary {
 }
 .boxed .title .title_main{
   /*font-size: 40px;*/
-  font-size: 2.224em;
+  /*font-size: 2.224em;*/
   line-height: 1.25;
 }
 #product .boxed .title .title_main{
   /*font-size: 40px;*/
-  font-size: 2.224em;
+  /*font-size: 2.224em;*/
   line-height: 1.25;
   color: #50bb14;
 }
 .boxed p{
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   /*font-size: 18px;*/
   font-size: 1.288em;
   letter-spacing: -0.5px;
@@ -315,8 +313,8 @@ footer .btn_primary {
   line-height: 1.5em;
 }
 #product .boxed p{
-  font-family: NotoSansCJKkr-Medium;
-  font-size: 15px;
+  font-family: 'NotoSansCJKkr-Medium';
+  /*font-size: 15px;*/
   font-weight: 500;
   line-height: 1.47;
   letter-spacing: -0.5px;
@@ -324,8 +322,8 @@ footer .btn_primary {
   color: #4c4c4c;
 }
 .has-scroll{
-  position: absolute;
-  width: 950px;
+  /*position: absolute;*/
+  /*width: 950px;*/
   height: 180px;
   left: -110px;
   overflow: -webkit-paged-x;
@@ -386,7 +384,7 @@ footer .btn_primary {
   top:0; bottom:0; left:0; right:0;
 }
 .has-scroll .item__txt{
-  font-family: NotoSansCJKkr-Medium;
+  font-family: 'NotoSansCJKkr-Medium';
   font-size: 14px;
   line-height: normal;
   font-weight: 500;
@@ -411,7 +409,7 @@ footer .btn_primary {
   color: var(--white);
 }
 #process h3{
-  font-family: DroidSerif-Bold;
+  font-family: 'DroidSerif-Bold';
   /*font-size: 48px;*/
   font-size: 3em;
   margin-bottom: 0.25em;
@@ -424,7 +422,7 @@ footer .btn_primary {
   margin-bottom: 8px;
 }
 #process h5 {
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   font-size: 12px;
   font-weight: 500;
   color: #8ed367;
@@ -432,7 +430,7 @@ footer .btn_primary {
   margin-bottom: 1.01em;
 }
 #process:not(.txt_sub) p{
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   /*font-size: 16px;*/
   font-size: 1.147em;
   font-weight: 500;
@@ -444,21 +442,22 @@ footer .btn_primary {
   margin-bottom: 1.01em;
 }
 #process .line{
-  width: 160px;
+  /*width: 160px;*/
+  width: 100%;
   height: 1px;
   border: solid 0.4px;
   color: #ffffff;
   margin-top: 15px;
 }
 #process .txt_sub p {
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   opacity: 0.7;
   font-size: 11px;
   margin-bottom: 8px;
 }
 footer{
   background-color: #efedf0;
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   font-size: 12px;
   font-weight: 500;
   line-height: 2.5;
@@ -497,7 +496,7 @@ footer .type--fine-print{
   vertical-align: middle;
 }
 .modal .modal-content{
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   text-align: left;
   color: #000000;
   background-color: #fff;
@@ -548,13 +547,13 @@ footer .type--fine-print{
   top: -24px;
 }
 #b2b .title{
-  font-family: DroidSerif-Bold;
+  font-family: 'DroidSerif-Bold';
   font-size: 40px;
   text-align: left;
   color: #000000;
 }
 #b2b .except-md p{
-  font-family: NotoSansCJKkr-Regular;
+  font-family: 'NotoSansCJKkr-Regular';
   font-size: 22px;
   font-weight: 200;
   line-height: 1.36;
@@ -562,12 +561,12 @@ footer .type--fine-print{
   text-align: left;
   color: #000000;
 }
-.col-md-6 {
+.col-md-6, .col-sm-12, .col-xs-12 {
   padding-right: 0;
   padding-left: 0;
 }
 #b2b .boxed h4{
-  font-family: NotoSansCJKkr-DemiLight;
+  font-family: 'NotoSansCJKkr-DemiLight';
   font-size: 28px;
   font-weight: 300;
   line-height: 1.07;
@@ -576,7 +575,7 @@ footer .type--fine-print{
   color: #000000;
 }
 #b2b .boxed p{
-  font-family: NotoSansCJKkr-DemiLight;
+  font-family: 'NotoSansCJKkr-DemiLight';
   font-size: 18px;
   font-weight: 200;
   line-height: 1.67;
@@ -607,7 +606,7 @@ footer .type--fine-print{
 .Rectangle-3 span {
   /*width: 39px;
   height: 13px;*/
-  font-family: NotoSansCJKkr-Medium;
+  font-family: 'NotoSansCJKkr-Medium';
   font-size: 11px;
   font-weight: 500;
   color: #ffffff !important;
@@ -632,4 +631,436 @@ footer .type--fine-print{
   position: inherit;
   left: 56px;
   top: -11px;
+}
+
+@media all and (min-width:320px){
+  .has-scroll {
+    height: 140px;
+  }
+  .has-scroll .item {
+    margin: 0 10px 10px 10px;
+  }
+  .has-scroll .item__image {
+    width: 80px;
+    height: 80px;
+  }
+  .has-scroll .item__txt {
+    font-size: 10px;
+  }
+  .container {
+    width: 260px;
+  }
+  .container h1{
+    font-size: 31px;
+  }
+  .container h1 .fontEng{
+    font-size: 28px;
+  }
+  .lead{
+    font-size: 13px;
+  }
+  #icon_right_01 {
+    left: 315px;
+  }
+  #icon_right_02 {
+    left: 395px;
+  }
+  .owl-theme .owl-controls {
+    width: 190px;
+    height: 100px;
+    margin-right: 6em;
+    top: -70px;
+  }
+  .slide_title {
+    font-size: 16px;
+  }
+  #Safe-for-Delicate-Fa h3 {
+    font-size: 32px;
+  }
+  #Safe-for-Delicate-Fa p {
+    font-size: 13px;
+  }
+  .features-9 img {
+    margin-bottom: 0;
+  }
+  .boxed img{
+    display: none;
+  }
+  .boxed .title .title_sub {
+    /*font-size: 15px;*/
+    font-size: 10px;
+  }
+  .boxed .title .title_main {
+     font-size: 21px;
+  }
+  .boxed p{
+    font-size: 13px;
+  }
+  #product .boxed p{
+    font-size: 12px;
+  }
+  .Rectangle-9 p {
+    font-size: 13px;
+  }
+  #Rectangle-9_01{
+    left: -20px;
+  }
+  #Rectangle-9_02 {
+    left: 120px;
+  }
+  #Rectangle-9_03 {
+    left: 280px;
+  }
+  #process h3 {
+     font-size: 40px;
+  }
+  #process h4 {
+     font-size: 16px;
+  }
+  #process:not(.txt_sub) p {
+    font-size: 13px;
+  }
+  #process .txt_sub p {
+    font-size: 9px;
+  }
+}
+/* 1. Mobile 세로(Portrait) (해상도 640px 이하) */
+@media all and (min-width:640px) and (orientation:portrait){
+
+}
+/* 2. Mobile 가로(Landscape) (해상도 640px 이상) */
+@media all and (min-width:640px) and (orientation:landscape){
+
+}
+/* 3. Tablet 세로(Portrait) (해상도 768x 이상) */
+@media all and (min-width:768px){ /* and (orientation:portrait)*/
+  .container {
+    width: 650px;
+  }
+  .container h1{
+    font-size: 31px;
+  }
+  .container h1 .fontEng{
+    font-size: 28px;
+  }
+  .lead{
+    font-size: 13px;
+  }
+  #icon_right_01 {
+    left: 315px;
+  }
+  #icon_right_02 {
+    left: 395px;
+  }
+  .owl-theme .owl-controls {
+    width: 190px;
+    height: 100px;
+    margin-right: 6em;
+    top: -70px;
+  }
+  .slide_title {
+    font-size: 16px;
+  }
+  #Safe-for-Delicate-Fa h3 {
+    font-size: 32px;
+  }
+  #Safe-for-Delicate-Fa p {
+    font-size: 13px;
+  }
+  .boxed .title .title_sub {
+    font-size: 15px;
+  }
+  .boxed .title .title_main {
+     font-size: 26px;
+  }
+  .boxed p{
+    font-size: 13px;
+  }
+  #product .boxed p{
+    font-size: 12px;
+  }
+  .Rectangle-9 p {
+    font-size: 13px;
+  }
+  #Rectangle-9_01{
+    left: -20px;
+  }
+  #Rectangle-9_02 {
+    left: 120px;
+  }
+  #Rectangle-9_03 {
+    left: 280px;
+  }
+  #process h3 {
+     font-size: 40px;
+  }
+  #process h4 {
+     font-size: 16px;
+  }
+  #process:not(.txt_sub) p {
+    font-size: 13px;
+  }
+  #process .txt_sub p {
+    font-size: 9px;
+  }
+}
+/* (해상도 992px 이하) */
+@media all and (min-width:992px){
+  .container {
+    width: 900px;
+  }
+  .container h1{
+    font-size: 31px;
+  }
+  .container h1 .fontEng{
+    font-size: 28px;
+  }
+  .lead{
+    font-size: 13px;
+  }
+  #icon_right_01 {
+    left: 315px;
+  }
+  #icon_right_02 {
+    left: 395px;
+  }
+  .owl-theme .owl-controls {
+    width: 190px;
+    height: 100px;
+    margin-right: 6em;
+    top: -70px;
+  }
+  .slide_title {
+    font-size: 16px;
+  }
+  #Safe-for-Delicate-Fa h3 {
+    font-size: 32px;
+  }
+  #Safe-for-Delicate-Fa p {
+    font-size: 13px;
+  }
+  .boxed .title .title_sub {
+    font-size: 15px;
+  }
+  .boxed .title .title_main {
+     font-size: 26px;
+  }
+  .boxed p{
+    font-size: 13px;
+  }
+  #product .boxed p{
+    font-size: 12px;
+  }
+  .Rectangle-9 p {
+    font-size: 13px;
+  }
+  #Rectangle-9_01{
+    left: -20px;
+  }
+  #Rectangle-9_02 {
+    left: 120px;
+  }
+  #Rectangle-9_03 {
+    left: 280px;
+  }
+  .has-scroll {
+    height: 180px;
+  }
+  .has-scroll .item {
+    margin: 0 26px 36px 26px;
+  }
+  .has-scroll .item__image {
+    width: 100px;
+    height: 100px;
+  }
+  .has-scroll .item__txt {
+    font-size: 14px;
+  }
+  #process h3 {
+     font-size: 40px;
+  }
+  #process h4 {
+     font-size: 16px;
+  }
+  #process:not(.txt_sub) p {
+    font-size: 13px;
+  }
+  #process .txt_sub p {
+    font-size: 9px;
+  }
+}
+/* 4. Tablet 가로(Landscape) (해상도 1024px 이하) */
+/*@media all and (min-width:1024px) and (orientation:landscape){
+}*/
+/* 5. PC (해상도 1025px 이상) */
+@media (min-width: 1200px){
+  .container {
+    width: 1050px;
+  }
+  .container h1{
+    font-size: 40px;
+  }
+  .container h1 .fontEng{
+    font-size: 30px;
+  }
+  .lead{
+    font-size: 15px;
+  }
+  #icon_right_01 {
+    left: 365px;
+  }
+  #icon_right_02 {
+    left: 510px;
+  }
+  .owl-theme .owl-controls {
+    width: 207px;
+    height: 114px;
+    margin-right: 10em;
+    top: -80px;
+  }
+  .slide_title {
+    font-size: 18px;
+  }
+  #Safe-for-Delicate-Fa h3 {
+    font-size: 38px;
+  }
+  #Safe-for-Delicate-Fa p {
+    font-size: 15px;
+  }
+  .boxed .title .title_sub {
+    font-size: 15px;
+  }
+  .boxed .title .title_main {
+     font-size: 32px;
+  }
+  .boxed p{
+    font-size: 14px;
+  }
+  #product .boxed p{
+    font-size: 11px;
+  }
+  .Rectangle-9 p {
+    font-size: 16px;
+  }
+  #Rectangle-9_01{
+    left: -20px;
+  }
+  #Rectangle-9_02 {
+    left: 130px;
+  }
+  #Rectangle-9_03 {
+    left: 305px;
+  }
+  .has-scroll {
+    height: 180px;
+  }
+  .has-scroll .item {
+    margin: 0 26px 36px 26px;
+  }
+  .has-scroll .item__image {
+    width: 100px;
+    height: 100px;
+  }
+  .has-scroll .item__txt {
+    font-size: 14px;
+  }
+  #process h3 {
+     font-size: 43px;
+  }
+  #process h4 {
+     font-size: 16px;
+  }
+  #process:not(.txt_sub) p {
+    font-size: 13px;
+  }
+  #process .txt_sub p {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1680px){
+  .container {
+    width: 1354px;
+  }
+  .container h1{
+    font-size: 48px;
+  }
+  .container h1 .fontEng{
+    font-size: 36px;
+  }
+  .lead {
+    font-size: 18px;
+  }
+  #icon_right_01 {
+    left: 435px;
+  }
+  #icon_right_02 {
+    left: 615px;
+  }
+  .owl-theme .owl-controls {
+    width: 227px;
+    height: 134px;
+    /* margin-right: 208px; */
+    margin-right: 14.84em;
+    top: -100px;
+  }
+  .slide_title {
+    font-size: 20px;
+  }
+  #Safe-for-Delicate-Fa h3 {
+    font-size: 44px;
+  }
+  #Safe-for-Delicate-Fa p {
+    font-size: 17px;
+  }
+  .boxed .title .title_sub {
+    font-size: 20px;
+  }
+  .boxed .title .title_main {
+    font-size: 40px;
+  }
+  .boxed p{
+    font-size: 18px;
+  }
+  #product .boxed p{
+    font-size: 15px;
+  }
+  .Rectangle-9 p {
+    font-size: 24px;
+  }
+  #Rectangle-9_01{
+    left: -20px;
+  }
+  #Rectangle-9_02 {
+    left: 170px;
+  }
+  #Rectangle-9_03 {
+    left: 400px;
+  }
+  .has-scroll {
+    height: 180px;
+  }
+  .has-scroll .item {
+    margin: 0 26px 36px 26px;
+  }
+  .has-scroll .item__image {
+    width: 100px;
+    height: 100px;
+  }
+  .has-scroll .item__txt {
+    font-size: 14px;
+  }
+  #process h3 {
+     font-size: 48px;
+    /*font-size: 3em;*/
+  }
+  #process h4 {
+     font-size: 18px;
+    /*font-size: 1.285em;*/
+  }
+  #process:not(.txt_sub) p {
+    font-size: 16px;
+  }
+  #process .txt_sub p {
+    font-size: 11px;
+  }
 }
