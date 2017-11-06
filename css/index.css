@@ -466,7 +466,7 @@ footer{
   padding: 40px 0 30px 0 !important;
 }
 footer img{
-  float: right;
+  float: none;
   max-height: 100% !important;
   padding-right: 38px;
 }
@@ -478,6 +478,9 @@ footer .type--fine-print{
   font-size: 11px;
   line-height: 2.73;
   color: #adb5bd;
+}
+.social-list {
+   overflow: unset; 
 }
 .modal {
   text-align: center;
@@ -563,6 +566,11 @@ footer .type--fine-print{
 }
 .col-md-6, .col-sm-12, .col-xs-12 {
   padding-right: 0;
+  /*padding-left: 0;*/
+}
+#process .col-md-6,
+#process .col-sm-12,
+#process .col-xs-12 {
   padding-left: 0;
 }
 #b2b .boxed h4{
@@ -648,7 +656,8 @@ footer .type--fine-print{
     font-size: 10px;
   }
   .container {
-    width: 260px;
+    /*width: 260px;*/
+    width: 560px;
   }
   .container h1{
     font-size: 31px;
@@ -887,6 +896,9 @@ footer .type--fine-print{
   }
   #process .txt_sub p {
     font-size: 9px;
+  }
+  footer img{
+    float: right;
   }
 }
 /* 4. Tablet 가로(Landscape) (해상도 1024px 이하) */
