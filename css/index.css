@@ -480,7 +480,7 @@ footer .type--fine-print{
   color: #adb5bd;
 }
 .social-list {
-   overflow: unset; 
+   overflow: unset;
 }
 .modal {
   text-align: center;
@@ -564,14 +564,29 @@ footer .type--fine-print{
   text-align: left;
   color: #000000;
 }
+#b2b .b2b-content[data-sr-id="1"] {
+  margin-top: 12em;
+}
+#b2b .b2b-content .col-md-6 {
+  /*float: right;*/
+}
+#b2b .b2b-content .col-md-6,
+#b2b .b2b-content .col-sm-12:not(img) {
+  top: 50%;
+  transform: translateY(-50%);
+}
 .col-md-6, .col-sm-12, .col-xs-12 {
   padding-right: 0;
-  /*padding-left: 0;*/
+  padding-left: 0;
 }
 #process .col-md-6,
 #process .col-sm-12,
 #process .col-xs-12 {
-  padding-left: 0;
+  /*padding-left: 0;*/
+}
+
+.social-list li {
+  opacity: unset;
 }
 #b2b .boxed h4{
   font-family: 'NotoSansCJKkr-DemiLight';
@@ -596,13 +611,8 @@ footer .type--fine-print{
   width: 100px;
   height: 5px;
   background-color: #50bb14;
-  margin-top: 88px;
+  /*margin-top: 88px;*/
   margin-bottom: 11px;
-}
-.even{
-  /*padding-right: 0;*/
-  /*padding-left: 224px;*/
-  /*padding-left: 16em;*/
 }
 .Rectangle-3 {
   width: 50px;
