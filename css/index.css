@@ -37,6 +37,7 @@ body {
   background: #ffffff;
   overflow-x: hidden;
   overflow-y: auto;
+  color: #000000;
 }
 .container {
   padding-right: 0px;
@@ -61,18 +62,21 @@ body {
 .logo-module a:hover{
   cursor: pointer;
 }
-#b2b .nav-container {
+#b2b .nav-container,
+#sub1 .nav-container {
   width: 100%;
   font-family: 'NotoSansCJKkr-Bold';
   font-size: 15px;
 }
-#b2b nav {
+#b2b nav,
+#sub1 nav {
   background-color: #323b35;
   z-index: 10;
   min-height: 65px;
   /*min-height:80px;*/
 }
-#b2b .line a span {
+#b2b .line a span,
+#sub1 .line a span {
   border-bottom: solid 3px #50bb14;
   padding-bottom: 3px;
 }
@@ -92,6 +96,60 @@ body {
 .menu > li:hover > a {
   opacity: 1;
 }
+
+#b2b .main-container,
+#sub1 .main-container{
+  color: #000000;
+}
+#sub1 .main-container p[data-id="last"] {
+  padding-bottom: 0;
+}
+#sub1 .main-container p{
+  font-family: 'NotoSansCJKkr-Regular';
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.67;
+  letter-spacing: -0.5px;
+  text-align: left;
+  padding-bottom: 67px;
+}
+#sub1 .main-container p span{
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.07;
+  letter-spacing: -0.5px;
+  border-top: solid 5px #50bb14;
+  padding-top: 11px;
+}
+#sub1 #brand{
+  background-color: #ebebeb;
+  font-family: 'NotoSansCJKkr-Regular';
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #212529;
+}
+#sub1 #brand .brand-title,
+#sub1 #brand .first-line{
+  margin-bottom: 30px;
+}
+#sub1 #brand .float-right{
+  right:0;
+  float: none;
+}
+#sub1 #brand .first-line span:not(.float-right){
+  margin-right: 50px;
+}
+#sub1 #brand .first-line span:not(.float-right){
+  margin-right: 50px;
+}
+#sub1 #brand .second-line span:not(.float-right){
+  margin-right: 58px;
+}
+.sub1 section:has(.background-image-holder){
+  padding-top: 8em;
+}
 @media (max-width: 990px){
   .menu li {
     float: none;
@@ -101,7 +159,8 @@ body {
     background-color: unset;
     padding: unset !important;
   }
-  #b2b .line a span {
+  #b2b .line a span,
+  #sub1 .line a span {
     border-bottom: unset;
     padding-bottom: 0px;
   }
@@ -537,23 +596,27 @@ footer .type--fine-print{
   padding-top: 0;
   padding-bottom: 0;
 }
-#b2b .boxed,
-#b2b img{
+#b2b .boxed, #sub1 .boxed,
+#b2b img, #sub1 img{
   margin-bottom: 0;
   padding-bottom: 0;
 }
 #b2b .b2b-content img{
   width: 100%;
 }
-#b2b #icon_left{
+#b2b #icon_left,
+#sub1 #icon_left{
   position: relative;
   top: -24px;
 }
-#b2b .title{
+#sub1 #icon_left_back_img{
+
+}
+#b2b .title,
+#sub1 .title{
   font-family: 'DroidSerif-Bold';
   font-size: 40px;
   text-align: left;
-  color: #000000;
 }
 #b2b .except-md p{
   font-family: 'NotoSansCJKkr-Regular';
@@ -562,7 +625,6 @@ footer .type--fine-print{
   line-height: 1.36;
   letter-spacing: -0.6px;
   text-align: left;
-  color: #000000;
 }
 #b2b .b2b-content[data-sr-id="1"] {
   margin-top: 12em;
@@ -595,7 +657,6 @@ footer .type--fine-print{
   line-height: 1.07;
   letter-spacing: -0.5px;
   text-align: left;
-  color: #000000;
 }
 #b2b .boxed p{
   font-family: 'NotoSansCJKkr-DemiLight';
@@ -604,7 +665,6 @@ footer .type--fine-print{
   line-height: 1.67;
   letter-spacing: -0.5px;
   text-align: left;
-  color: #000000;
   margin-bottom: 2.7em;
 }
 .Rectangle-4 {

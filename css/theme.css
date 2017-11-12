@@ -7920,9 +7920,9 @@ footer .logo {
   }
 }
 /*! -- Pillar Sections General -- */
-section:not(.testimonial-3):not(.map-1):not(.imagebg):not(.imageblock):not(.bg--dark):not(.bg--secondary):not(.bg--primary):not(.bg--white):not(.features-5):not(.features-10):not(.wide-grid):not(.slider) + section:not(.testimonial-3):not(.map-1):not(.imagebg):not(.imageblock):not(.bg--dark):not(.bg--secondary):not(.bg--primary):not(.bg--white):not(.features-5):not(.features-10):not(.wide-grid):not(.slider) {
+/*section:not(.testimonial-3):not(.map-1):not(.imagebg):not(.imageblock):not(.bg--dark):not(.bg--secondary):not(.bg--primary):not(.bg--white):not(.features-5):not(.features-10):not(.wide-grid):not(.slider) + section:not(.testimonial-3):not(.map-1):not(.imagebg):not(.imageblock):not(.bg--dark):not(.bg--secondary):not(.bg--primary):not(.bg--white):not(.features-5):not(.features-10):not(.wide-grid):not(.slider) {
   padding-top: 0;
-}
+}*/
 .wide-grid {
   max-width: 100%;
   padding: 0;
