@@ -185,6 +185,9 @@ body {
   display: block;
   font-size: 11px;
 }
+#sub2 .row img{
+    width: 100%;
+}
 
 @media (max-width: 990px){
   .menu li {
