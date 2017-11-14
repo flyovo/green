@@ -64,14 +64,14 @@ body {
 }
 #b2b .nav-container,
 #sub1 .nav-container,
-#sub2 .nav-container {
+#sub2_temp .nav-container {
   width: 100%;
   font-family: 'NotoSansCJKkr-Bold';
   font-size: 15px;
 }
 #b2b nav,
 #sub1 nav,
-#sub2 nav {
+#sub2_temp nav {
   background-color: #323b35;
   z-index: 10;
   min-height: 65px;
@@ -79,7 +79,7 @@ body {
 }
 #b2b .line a span,
 #sub1 .line a span,
-#sub2 .line a span {
+#sub2_temp .line a span {
   border-bottom: solid 3px #50bb14;
   padding-bottom: 3px;
 }
@@ -150,15 +150,15 @@ body {
 #sub1 #brand .second-line span:not(.float-right){
   margin-right: 58px;
 }
-#sub2 section{
+#sub2_temp section{
   padding-top: 0;
   padding-bottom: 0;
 }
-#sub2 #menu{
+#sub2_temp #menu{
   height: 108px;
   background-color: #f9f9f9;
 }
-#sub2 #menu a{
+#sub2_temp #menu a{
   display: inline-block;
   margin-bottom: 7px;
   text-align: center;
@@ -168,24 +168,24 @@ body {
   padding-right: 40px;
   padding-bottom: 2px;
 }
-#sub2 #menu a[data-line="all"]{
+#sub2_temp #menu a[data-line="all"]{
   border-right: solid 1px #e9e9e9;
   border-left: solid 1px #e9e9e9;
 }
-#sub2 #menu a:hover{
+#sub2_temp #menu a:hover{
   border-bottom: solid 2px;
   border-color: rgba(50, 59, 53, 0.2);
 }
-#sub2 #menu a > img{
+#sub2_temp #menu a > img{
   display: block;
   margin-bottom: 7px;
   margin: auto;
 }
-#sub2 #menu a > span{
+#sub2_temp #menu a > span{
   display: block;
   font-size: 11px;
 }
-#sub2 .row img{
+#sub2_temp section .row img{
     width: 100%;
 }
 
