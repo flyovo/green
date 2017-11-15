@@ -1400,7 +1400,7 @@ nav {
   padding-left: 0;
 }
 .menu > li:last-child a {
-  padding-right: 0;
+  /*padding-right: 0;*/
 }
 .nav-bar.bg--white .menu > li > a {
   color: #767676;
@@ -1494,7 +1494,7 @@ nav {
   user-select: none;
   -webkit-user-select: none;
 }
-@media all and (max-width: 990px) {
+/*@media all and (max-width: 990px) {
   .nav-bar {
     height: auto;
     overflow: hidden;
@@ -1567,7 +1567,7 @@ nav {
   .module-applet.active .module-applet__body {
     display: block;
   }
-}
+}*/
 .nav-open .nav-bar {
   max-height: 100000px !important;
 }
@@ -1626,8 +1626,8 @@ select {
   -webkit-appearance: none;
   background: #ffffff;
   padding: 0.8125em;
-  border-radius: 50px;
-  border: none;
+  /*border-radius: 50px;*/
+  /*border: none;*/
 }
 input[type]:focus,
 textarea:focus,
@@ -4090,7 +4090,7 @@ input[type="tel"] {
   color: #767676;
   padding-left: 1.625em;
   padding-right: 1.625em;
-  height: 52px;
+  /*height: 52px;*/
 }
 input[type='text']:focus,
 input[type='address']:focus,

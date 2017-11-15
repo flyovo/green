@@ -35,15 +35,13 @@
                           <a href="sub2.html"><span>사업제휴</span></a>
                       </li>
                       <li>
-                         <a class="btn_primary" href="#" target="_blank">
-                           <span>그린어스에 문의하기</span>
-                         </a>
+                        <a class="btn_primary" data-toggle="modal" href="#contactus">
+                          <span>그린어스에 문의하기</span>
+                        </a>
                       </li>
                   </ul>
               </div>
-          </div>
-          <div class="nav-mobile-toggle visible-toggle">
-              <i class="icon-Align-JustifyAll icon icon--sm"></i>
+            </div>
           </div>
       </nav>
   </div>
@@ -88,12 +86,12 @@
     <section class="space--md features features-9 content">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 features__avatar">
+          <div class="col-xs-4 features__avatar">
             <h3 class="title">
               웨딩 에프터 케어 서비스
             </h3>
           </div>
-          <div class="col-md-8 features__avatar">
+          <div class="col-xs-8 features__avatar">
             <p data-number="last">
               웨딩드레스는 원단, 디자인, 장식이 정교하고 섬세해 착용 과정과 더불어 세탁과정에서도 손상이 발생해 일반 세탁으로는 그 고유의 아름다움을 유지하기 어렵습니다. 그린어스에서는 세정 공정 중에 섬유 직물과 화학적으로 반응하지 않아 웨딩드레스가 지닌 고유의 아름다움을 지켜드립니다.
               <br><br>
@@ -102,12 +100,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 features__avatar">
+          <div class="col-xs-4 features__avatar">
             <h3 class="title">
               서비스 공정 및 특장점
             </h3>
           </div>
-          <div class="col-md-8 features__avatar">
+          <div class="col-xs-8 features__avatar">
             <span class="keyword" data-width="90">진행 브랜드</span>
             <p class="keyword-sub" data-number="last">
               청담 수입드레스 B사, 학동 셀프웨딩점 L사, 합정 셀프웨딩점 F사, 대림 빅사이즈 드레스점 L사 등 여러 고급 드레스 대여 브랜드 및 판매 브랜드
@@ -119,13 +117,12 @@
         </div>
       </div>
     </div>
-
     <footer class="footer-3 text-center-xs">
        <div class="row">
-          <div class="col-md-3">
+          <div class="col-xs-3">
              <img alt="logo" class="logo" src="image/footer-logo.png">
           </div>
-          <div class="col-md-6 companyinfo">
+          <div class="col-xs-6 companyinfo">
              <ul>
                 <li>
                    상호명: 그린어스코리아 유한회사 / 대표이사: 박종성 / 소재지: (우편번호 06302) 서울특별시 강남구 논현로 134 연산MS 503호
@@ -143,10 +140,10 @@
                 GreenEarth korea. All Right Reserved.
              </div>
           </div>
-          <div class="col-md-3 text-left text-center-xs">
+          <div class="col-xs-3 text-left text-center-xs">
              <ul>
                 <li>
-                  <a class="btn_primary" href="#" target="_blank">
+                  <a class="btn_primary" data-toggle="modal" href="#contactus">
                     <span>그린어스에 문의하기</span>
                   </a>
                 </li>
@@ -154,6 +151,39 @@
           </div>
        </div>
     </footer>
+  </div>
+</div>
+<div class="modal fade" id="contactus" tabindex="-1" role="dialog" data-backdrop="static">
+  <div class="modal-dialog" role="contact">
+    <div class="modal-content">
+      <span class="close" data-dismiss="modal" aria-label="Close">
+        <img src="image/ico-close-b.png">
+      </span>
+      <div class="row">
+          <div class="col-xs-3">
+              <div class="modal-title"><span>문의하기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+          </div>
+          <div class="col-xs-9">
+              <div class="modal-body">
+                  <form>
+                     <input type="text" class="form-control input-half" id="recipient-name" placeholder="작성자명*">
+                     <input type="text" class="form-control input-half float-right" id="recipient-name" placeholder="핸드폰번호*">
+                     <input type="text" class="form-control" id="recipient-name" placeholder="이메일주소*">
+                     <input type="text" class="form-control" id="recipient-name" placeholder="제목*">
+                     <textarea class="form-control" id="message-text" placeholder="내용*"></textarea>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <button type="button" class="btn btn-primary">그린어스에 문의하기</button>
+      <a class="btn_primary">
+        <span>그린어스에 문의하기</span>
+      </a>
+      <button type="button" class="btn btn-default" data-dismiss="modal">취소하기</button>
+      <a data-dismiss="modal" style="background-color:#495057;color:white">
+        <span>취소하기</span>
+      </a>
+    </div>
   </div>
 </div>
   <script src="js/owl.carousel.min.js"></script>

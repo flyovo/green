@@ -35,15 +35,12 @@
                           <a href="sub2.html"><span>사업제휴</span></a>
                       </li>
                       <li>
-                         <a class="btn_primary" href="#" target="_blank">
+                         <a class="btn_primary" data-toggle="modal" href="#contactus">
                            <span>그린어스에 문의하기</span>
                          </a>
                       </li>
                   </ul>
               </div>
-          </div>
-          <div class="nav-mobile-toggle visible-toggle">
-              <i class="icon-Align-JustifyAll icon icon--sm"></i>
           </div>
       </nav>
   </div>
@@ -88,12 +85,12 @@
     <section class="space--md features features-9 content">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 features__avatar">
+          <div class="col-xs-4 features__avatar">
             <h3 class="title">
               케어라벨
             </h3>
           </div>
-          <div class="col-md-8 features__avatar">
+          <div class="col-xs-8 features__avatar">
             <p>
               그린어스는 그린어스의 자체 연구소를 통해 다양한 브랜드 의류의 섬유테스트와 세탁 자문 경험을 바탕으로 그린어스 케어라벨을 제작하고 있습니다. 다양한 의류 및 관련 업체와의 협업을 통해 그린어스 케어라벨을 배포, 케어라벨을 부착한 브랜드 의류 및 제품을 구매한 고객은 전문적인 의류 토탈 케어 서비스를 제공 받고 해당 브랜드의 긍정적인 이미지를 유지할 수 있도록 그린어스는 최선을 다해 서비스하겠습니다.
             </p>
@@ -108,46 +105,18 @@
         </div>
       </div>
     </div>
-
-    <footer class="footer-3 text-center-xs">
-       <div class="row">
-          <div class="col-md-3">
-             <img alt="logo" class="logo" src="image/footer-logo.png">
-          </div>
-          <div class="col-md-6 companyinfo">
-             <ul>
-                <li>
-                   상호명: 그린어스코리아 유한회사 / 대표이사: 박종성 / 소재지: (우편번호 06302) 서울특별시 강남구 논현로 134 연산MS 503호
-                   <a target='_blank' href='http://naver.me/GUzaTZxX' class="Rectangle-3">
-                     <span>지도보기</span>
-                   </a>
-                </li>
-                <li>
-                   사업자등록번호: 870-88-00334 / 대표전화: 1661-0844 / 팩스: 02-577-0845 / 고객지원: <a href='mailto:support@greenearthkorea.co.kr'>support@greenearthkorea.co.kr</a>
-                </li>
-             </ul>
-             <div class="type--fine-print">
-                ©
-                <span class="update-year">2017</span>
-                GreenEarth korea. All Right Reserved.
-             </div>
-          </div>
-          <div class="col-md-3 text-left text-center-xs">
-             <ul>
-                <li>
-                  <a class="btn_primary" href="#" target="_blank">
-                    <span>그린어스에 문의하기</span>
-                  </a>
-                </li>
-             </ul>
-          </div>
-       </div>
-    </footer>
+    <div id="footer"></div>
   </div>
 </div>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/scrollreveal.min.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/scripts.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#footer').load('footer.html');
+      $('#contactus').load('modals.html #contactus');
+    })
+  </script>
 </body>
 </html>

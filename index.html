@@ -35,15 +35,12 @@
                           <a href="sub2.html"><span>사업제휴</span></a>
                       </li>
                       <li>
-                         <a class="btn_primary" href="#" target="_blank">
+                         <a class="btn_primary" data-toggle="modal" href="#contactus">
                            <span>그린어스에 문의하기</span>
                          </a>
                       </li>
                   </ul>
               </div>
-          </div>
-          <div class="nav-mobile-toggle visible-toggle">
-              <i class="icon-Align-JustifyAll icon icon--sm"></i>
           </div>
       </nav>
   </div>
@@ -373,40 +370,7 @@
           </div>
        </div>
     </section>
-    <footer class="footer-3 text-center-xs">
-       <div class="row">
-          <div class="col-xs-3">
-             <img alt="logo" class="logo" src="image/footer-logo.png">
-          </div>
-          <div class="col-xs-6 companyinfo">
-             <ul>
-                <li>
-                   상호명: 그린어스코리아 유한회사 / 대표이사: 박종성 / 소재지: (우편번호 06302) 서울특별시 강남구 논현로 134 연산MS 503호
-                   <a target='_blank' href='http://naver.me/GUzaTZxX' class="Rectangle-3">
-                     <span>지도보기</span>
-                   </a>
-                </li>
-                <li>
-                   사업자등록번호: 870-88-00334 / 대표전화: 1661-0844 / 팩스: 02-577-0845 / 고객지원: <a href='mailto:support@greenearthkorea.co.kr'>support@greenearthkorea.co.kr</a>
-                </li>
-             </ul>
-             <div class="type--fine-print">
-                ©
-                <span class="update-year">2017</span>
-                GreenEarth korea. All Right Reserved.
-             </div>
-          </div>
-          <div class="col-xs-3 text-left text-center-xs">
-             <ul class='social-list'>
-                <li>
-                  <a class="btn_primary" href="#" target="_blank">
-                    <span>그린어스에 문의하기</span>
-                  </a>
-                </li>
-             </ul>
-          </div>
-       </div>
-    </footer>
+    <div id="footer"></div>
   </div>
 </div>
 <div id="modals"></div>
@@ -414,7 +378,12 @@
   <script src="js/scrollreveal.min.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/scripts.js"></script>
-  <script>$('#modals').load('modals.html');</script>
+  <script>
+    $(document).ready(function(){
+      $('#footer').load('footer.html');
+      $('#modals').load('modals.html');
+    })
+  </script>
   <script>
     $(window).on('load', function(){
       $('.owl-controls').append('<div class="slide_title">글로벌 브랜드</div>');
