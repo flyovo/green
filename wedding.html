@@ -117,7 +117,8 @@
         </div>
       </div>
     </div>
-    <footer class="footer-3 text-center-xs">
+    <div id="footer"></div>
+    <!-- <footer class="footer-3 text-center-xs">
        <div class="row">
           <div class="col-xs-3">
              <img alt="logo" class="logo" src="image/footer-logo.png">
@@ -150,45 +151,20 @@
              </ul>
           </div>
        </div>
-    </footer>
+    </footer> -->
   </div>
 </div>
-<div class="modal fade" id="contactus" tabindex="-1" role="dialog" data-backdrop="static">
-  <div class="modal-dialog" role="contact">
-    <div class="modal-content">
-      <span class="close" data-dismiss="modal" aria-label="Close">
-        <img src="image/ico-close-b.png">
-      </span>
-      <div class="row">
-          <div class="col-xs-3">
-              <div class="modal-title"><span>문의하기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-          </div>
-          <div class="col-xs-9">
-              <div class="modal-body">
-                  <form>
-                     <input type="text" class="form-control input-half" id="recipient-name" placeholder="작성자명*">
-                     <input type="text" class="form-control input-half float-right" id="recipient-name" placeholder="핸드폰번호*">
-                     <input type="text" class="form-control" id="recipient-name" placeholder="이메일주소*">
-                     <input type="text" class="form-control" id="recipient-name" placeholder="제목*">
-                     <textarea class="form-control" id="message-text" placeholder="내용*"></textarea>
-                  </form>
-              </div>
-          </div>
-      </div>
-      <button type="button" class="btn btn-primary">그린어스에 문의하기</button>
-      <a class="btn_primary">
-        <span>그린어스에 문의하기</span>
-      </a>
-      <button type="button" class="btn btn-default" data-dismiss="modal">취소하기</button>
-      <a data-dismiss="modal" style="background-color:#495057;color:white">
-        <span>취소하기</span>
-      </a>
-    </div>
-  </div>
-</div>
+<div id="contactus"></div>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/scrollreveal.min.js"></script>
   <script src="js/parallax.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/contactus.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#footer').load('footer.html');
+      $('#contactus').load('modals.html #contactus');
+    })
+  </script>
 </body>
 </html>

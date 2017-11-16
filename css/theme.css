@@ -4088,8 +4088,8 @@ input[type="tel"] {
   -webkit-transition: 0.2s linear;
   -moz-transition: 0.2s linear;
   color: #767676;
-  padding-left: 1.625em;
-  padding-right: 1.625em;
+  /*padding-left: 1.625em;*/
+  /*padding-right: 1.625em;*/
   /*height: 52px;*/
 }
 input[type='text']:focus,
