@@ -31,7 +31,8 @@ body {
   min-width: 1680px;
 }
 .container {
-  width: 1354px;
+  /*width: 1354px;*/
+  min-width: 1250px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -91,6 +92,14 @@ body {
 #sub1 section[data-number='first']{
   padding-top: 9.75em;
 }
+#sub2 section .boxed.float-left{
+  width: 625px;
+  margin-right: 2.4375em;
+}
+#sub2 section .boxed.float-right{
+  width: 625px;
+  margin-left: 2.4375em;
+}
 .nav-bar {
   padding: 0 50px 0 35px;
 }
@@ -107,7 +116,14 @@ body {
 .menu > li:hover > a {
   opacity: 1;
 }
-
+.sub_menu_line{
+  margin-top: 14px !important;
+}
+section.space--smd,
+footer.space--smd {
+  padding-top: 6.04em;
+  padding-bottom: 6.04em;
+}
 #sub1 .main-container,
 #sub2 .main-container
 {
@@ -151,10 +167,10 @@ body {
   float: none;
 }
 #sub1 #brand .first-line span:not(.float-right){
-  margin-right: 7.7%;
+  margin-right: 7.2%;
 }
 #sub1 #brand .second-line span:not(.float-right){
-  margin-right: 9.2%;
+  margin-right: 8.6%;
 }
 .slider.height-72 {
   height: auto;
@@ -197,7 +213,7 @@ body {
 }
 #sub2_sub #menu a > img{
   display: block;
-  padding-bottom: 9px;
+  padding-bottom: 11px;
   margin: auto;
 }
 #sub2_sub #menu a > span{
@@ -384,7 +400,9 @@ footer .btn_primary {
 }
 #Safe-for-Delicate-Fa {
   padding-top: 0px;
+  padding-bottom: 0px;
   position: relative;
+  top: -50px;
 }
 #Safe-for-Delicate-Fa h3 {
   font-family: 'DroidSerif-Bold';
@@ -415,7 +433,8 @@ footer .btn_primary {
   line-height: 2.5;
 }
 .boxed .title .title_main{
-  font-size: 40px;
+  /*font-size: 40px;*/
+  font-size: 39px;
   line-height: 1.25;
 }
 #product .boxed .title .title_main{
@@ -452,7 +471,7 @@ footer .btn_primary {
 }
 .has-scroll::-webkit-scrollbar {
   background-color: #e9ecef;
-  height: 3px;
+  height: 5px;
 }
 .has-scroll::-webkit-scrollbar-thumb,
 .has-scroll::-webkit-scrollbar-thumb:window-inactive {
@@ -596,6 +615,9 @@ footer .type--fine-print{
   font-size: 11px;
   line-height: 2.73;
   color: #adb5bd;
+}
+#landing section.space--sm{
+  padding-bottom: 0;
 }
 #landing #process .col-xs-4,
 footer .col-xs-6 {
