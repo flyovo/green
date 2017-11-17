@@ -294,7 +294,7 @@ body {
   float: right;
 }
 @media all and (max-width: 767px) {
-  .float-left,
+  /*.float-left,
   .float-right {
     float: none;
   }
@@ -303,7 +303,7 @@ body {
   }
   .float-right-xs {
     float: right;
-  }
+  }*/
 }
 .pos-vertical-center {
   position: relative;
@@ -311,7 +311,7 @@ body {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
 }
-@media all and (max-width: 767px) {
+/*@media all and (max-width: 767px) {
   .pos-vertical-center {
     top: 0;
     transform: none;
@@ -324,7 +324,7 @@ body {
     transform: none;
     -webkit-transform: none;
   }
-}
+}*/
 .pos-vertical-align-columns {
   display: table;
   table-layout: fixed;
@@ -1962,7 +1962,7 @@ img + .boxed {
   margin-top: -1.625em;
 }
 @media all and (max-width: 767px) {
-  .boxed {
+  /*.boxed {
     padding: 1.625em;
     margin-bottom: 15px;
   }
@@ -1977,7 +1977,7 @@ img + .boxed {
   }
   .row:last-child div[class*='col-']:last-child .boxed:last-child {
     margin-bottom: 0;
-  }
+  }*/
 }
 /**! 19. Sliders **/
 section.slider {
@@ -3112,14 +3112,14 @@ div[class*='col-'] > div[class*='col-']:first-child {
 div[class*='col-'] > div[class*='col-']:last-child {
   padding-right: 0;
 }
-@media all and (max-width: 767px) {
+/*@media all and (max-width: 767px) {
   .col-xs-6:nth-child(odd) {
     padding-right: 7.5px;
   }
   .col-xs-6:nth-child(even) {
     padding-left: 7.5px;
   }
-}
+}*/
 @media all and (min-width: 768px) {
   .mt--1 {
     margin-top: 1.625em;
