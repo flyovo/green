@@ -29,10 +29,11 @@ body {
   overflow-y: auto;
   color: #000000;
   min-width: 1680px;
+  /*min-width: 1250px;*/
 }
 .container {
   /*width: 1354px;*/
-  min-width: 1250px;
+  width: 1250px;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -94,11 +95,11 @@ body {
 }
 #sub2 section .boxed.float-left{
   width: 625px;
-  margin-right: 2.4375em;
+  margin-left: 2.4375em;
 }
 #sub2 section .boxed.float-right{
   width: 625px;
-  margin-left: 2.4375em;
+  margin-right: 2.4375em;
 }
 .nav-bar {
   padding: 0 50px 0 35px;
@@ -172,11 +173,11 @@ footer.space--smd {
 #sub1 #brand .second-line span:not(.float-right){
   margin-right: 8.6%;
 }
-.slider.height-72 {
+.slider.height-68 {
   height: auto;
 }
-.slider.height-72 .slides li {
-  height: 720px;
+.slider.height-68 .slides li {
+  height: 680px;
   padding: 0;
 }
 #sub2_sub section[data-img='1']{
@@ -195,7 +196,9 @@ footer.space--smd {
 #sub2_sub #menu{
   height: 108px;
   background-color: #f9f9f9;
-  padding: 12px 150px;
+  /*padding: 12px 150px;*/
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: flex;
 }
 #sub2_sub #menu a{
@@ -275,6 +278,7 @@ footer.space--smd {
 #sub2_sub .content img{
   margin: auto;
   display: block;
+  margin-bottom: 50px;
 }
 .btn_primary {
   background-color: #50bb14;
@@ -462,7 +466,7 @@ footer .btn_primary {
 .has-scroll{
   position: absolute;
   width: 950px;
-  height: 180px;
+  /*height: 180px;*/
   left: -110px;
   overflow: -webkit-paged-x;
   overflow-x: scroll;
@@ -744,7 +748,7 @@ footer .col-xs-6 {
   width: 48%;
   display: inline;
 }
-.modal#contactus input[type='text']{
+.modal#contactus input{
   margin-bottom: 10px;
 }
 .modal#contactus textarea{
@@ -759,6 +763,9 @@ footer .col-xs-6 {
 #sub2 section:not(.except-md){
   padding-top: 0;
   padding-bottom: 0;
+}
+#sub2 .boxed{
+  padding: 0;
 }
 #sub2 .boxed, #sub1 .boxed,
 #sub2 img, #sub1 img{
