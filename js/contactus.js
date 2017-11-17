@@ -1,4 +1,32 @@
 function formSubmit(){
+  var regexText = /^[가-힣a-zA-Z\s]+$/;
+  var regexPhone = /^[0-9-]{5,15}$/;
+  var regexMail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+  var formData = $('form').serializeArray();
+
+  if(!regexText.test(formData[0].value) || formData[0].value==''){
+    alert('이름을 입력해주세요.');
+    return false;
+  }
+  if(!regexPhone.test(formData[1].value) || formData[1].value==''){
+    alert('핸드폰 번호를 확인해주세요.');
+    return false;
+  }
+  if(!regexMail.test(formData[2].value) || formData[2].value==''){
+    alert('이메일 주소를 확인해주세요.');
+    return false;
+  }
+  if(formData[3].value==''){
+    alert('제목을 입력해주세요.');
+    return false;
+  }
+  if(formData[4].value==''){
+    alert('내용을 입력해주세요.');
+    return false;
+  }
+}
+
+function sendEmail(){
   var url = "http://ec2-54-145-157-219.compute-1.amazonaws.com:9000/mail";
   var formData = $('form').serializeArray();
   // var template = "<html><head></head><body>" +
