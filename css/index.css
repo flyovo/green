@@ -110,7 +110,8 @@ body {
 #landing section .boxed.float-right{
   margin-right: 1.25em;
   padding-left: 0;
-  top: 20px;
+  padding-bottom: 0;
+  top: 32px;
 }
 @media(min-width:1360px){
   #landing .img-size img{
@@ -197,12 +198,13 @@ footer.space--smd {
 }
 .slider.height-68 {
   height: auto;
-  /*height: 680px;*/
 }
 .slider.height-68 .slides li {
-  /*height: 680px;*/
-  height: 613px;
+  height: 615px;
   padding: 0;
+}
+.slider.height-68 .slides li .background-image-holder{
+  height: 680px;
 }
 section[data-img='1']{
   padding-top: 0 !important;
@@ -370,7 +372,7 @@ footer .btn_primary {
   color: #ffffff !important;
   color: var(--white);
   display: inline-grid;
-  padding: 30px 60px;
+  padding: 30px 55px;
   text-align: center;
   position: absolute;
 }
@@ -449,7 +451,7 @@ footer .btn_primary {
 }
 #Safe-for-Delicate-Fa img {
   position: absolute;
-  top: -255px;
+  top: -205px;
   right: 10px;
 }
 .boxed .title .title_sub{
@@ -631,7 +633,7 @@ footer .btn_primary {
   margin-top: 15px;
 }
 #process .txt_sub p {
-  font-family: 'NotoSansCJKkr-Regular';
+  font-family: 'NotoSansCJKkr-Bold';
   opacity: 0.7;
   font-size: 11px;
   margin-bottom: 8px;
@@ -821,13 +823,14 @@ footer .col-xs-6 {
 #sub2 .content img:not([alt="pic"]){
   display: block;
 }
-#sub2 #icon_left,
-#sub1 #icon_left{
+#icon_left,
+#icon_left{
   position: relative;
   top: -24px;
 }
-#sub1 #icon_left_back_img{
-
+#icon_bottom{
+  position: relative;
+  left: -20px;
 }
 #sub2 .title,
 #sub1 .title{
@@ -890,8 +893,9 @@ footer .col-xs-6 {
 }
 #Rectangle-9_02 {
   /*left: 170px;*/
-  left: 206px;
+  left: 195px;
 }
 #Rectangle-9_03 {
-  left: 400px;
+  /*left: 400px;*/
+  left: 376px;
 }
