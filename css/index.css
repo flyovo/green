@@ -376,7 +376,7 @@ footer .btn_primary {
 }
 .Rectangle-9 p{
   font-family: 'NotoSansCJKkr-Regular';
-  font-size: 24px;
+  /*font-size: 24px;*/
   line-height: 1.25;
   letter-spacing: -0.5px;
   text-align: center;
@@ -515,7 +515,7 @@ footer .btn_primary {
 }
 .has-scroll::-webkit-scrollbar {
   background-color: #e9ecef;
-  height: 5px;
+  height: 6px;
 }
 .has-scroll::-webkit-scrollbar-thumb,
 .has-scroll::-webkit-scrollbar-thumb:window-inactive {
@@ -889,7 +889,8 @@ footer .col-xs-6 {
   left: -20px;
 }
 #Rectangle-9_02 {
-  left: 170px;
+  /*left: 170px;*/
+  left: 206px;
 }
 #Rectangle-9_03 {
   left: 400px;
