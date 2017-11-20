@@ -215,6 +215,7 @@ section[data-img='1'] img{
 }
 #sub2 .content .row{
   display: flex;
+  align-items: center;
 }
 #sub2 .content .content-txt{
   margin: auto;
@@ -317,7 +318,7 @@ section[data-img='1'] img{
 footer .btn_primary {
   width: 207px;
   height: 43px;
-  padding: 12px 52px !important;
+  padding: 12px 42px !important;
 }
 .btn_cancel {
   background-color: #495057;
