@@ -826,17 +826,18 @@ footer .col-xs-6 {
 #icon_left,
 #icon_left{
   position: relative;
-  top: -24px;
+  top: -20px;
 }
 #icon_bottom{
   position: relative;
-  left: -20px;
+  /*top: -10px;*/
 }
 #sub2 .title,
 #sub1 .title{
   font-family: 'DroidSerif-Bold';
   font-size: 40px;
   text-align: left;
+  margin-bottom: 0;
 }
 #sub2 .except-md p{
   font-family: 'NotoSansCJKkr-Regular';
