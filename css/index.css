@@ -30,7 +30,7 @@ body {
   color: #000000;
   /*min-width: 1680px;*/
   min-width: 1280px;
-  max-width: 1920px;
+  /*max-width: 1920px;*/
 }
 .container {
   /*width: 1354px;*/
@@ -463,8 +463,9 @@ footer .btn_primary {
   line-height: 2.5;
 }
 .boxed .title .title_main{
+  font-family: 'NotoSansCJKkr-Bold';
   /*font-size: 40px;*/
-  font-size: 39px;
+  font-size: 37px;
   line-height: 1.25;
 }
 #product .boxed .title .title_main{
