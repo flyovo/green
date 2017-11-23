@@ -885,7 +885,7 @@ a {
   color: #d14b4b !important;
 }
 .color--white {
-  color: #fff;
+  color: #ffffff !important;
 }
 .color--dark {
   color: #232323;
