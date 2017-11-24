@@ -19,26 +19,47 @@
   <link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="css/mobile.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)">
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)" id="modal-m">
   <div class="main-container">
-    <section id="Safe-for-Delicate-Fa" class="space--sm features features-9">
+    <section class="features features-9">
       <div class="container features__avatar">
+        <a id="move-back" href="index_m.html">
+          <img src="image/icon-back.png"/>
+          뒤로 가기
+        </a>
         <h3 class="title">
-          Safe for Delicate Fabric<br />
-          and Trims No Hazardous<br />
-          Chemicals
+          <span class="title_main">문의하기</span>
         </h3>
-        <p>
-          그린어스는 인간에게 해롭지 않은 세탁<br />
-          환경에게도 해롭지 않은 세탁 서비스,<br />
-          문화를 선도합니다.
-        </p>
+        <form>
+          <label>작성자명*
+            <input type="text" class="form-control" id="contact-name" name="name">
+          </label>
+          <label>핸드폰번호*
+            <input type="tel" class="form-control" id="contact-phone" name="phone">
+          </label>
+          <label>이메일주소*
+            <input type="email" class="form-control" id="contact-email" name="email">
+          </label>
+          <label>제목*
+            <input type="text" class="form-control" id="contact-title" name="title">
+          </label>
+          <label>내용*
+            <textarea class="form-control" id="contact-context" name="content"></textarea>
+          </label>
+          <div>
+            <a class="btn btn_primary float-left" onclick="formSubmit(); return false;">
+              <span>확인</span>
+            </a>
+            <a class="btn float-right" href="index_m.html">
+              <span>취소하기</span>
+            </a>
+          </div>
+        </form>
       </div>
     </section>
     <div id="footer"></div>
   </div>
 </div>
-<div id="modals"></div>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/scrollreveal.min.js"></script>
   <script src="js/scripts.js"></script>
