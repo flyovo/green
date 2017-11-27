@@ -40,8 +40,8 @@ body {
 }
 .container h1{
   font-family: 'NotoSansCJKkr-Bold';
-  font-size: 24px;
-  line-height: 1.25;
+  font-size: 48px;
+  line-height: 1.27;
   letter-spacing: -0.5px;
   text-align: left;
   color: #ffffff;
@@ -50,9 +50,9 @@ body {
 }
 .container h1 .fontEng{
   font-family: 'DroidSerif-Bold';
-  font-size: 14px;
-  line-height: 3.21;
-  letter-spacing: -0.3px;
+  font-size: 36px;
+  line-height: 1.69;
+  letter-spacing: normal;
 }
 .row {
   margin-right: 0px;
@@ -758,6 +758,9 @@ footer .col-xs-6 {
 .modal#contactus .form-control{
   border-radius: 0;
   border: solid 1px #868e96;
+}
+.hidden_m {
+  display: none !important;
 }
 ::-webkit-input-placeholder{
   font-family: 'NotoSansCJKkr-Rugular';
