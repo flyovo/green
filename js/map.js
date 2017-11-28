@@ -237,8 +237,9 @@
 
             map.setCenter(place.latlng);
 
-            if(mobile)
+            if($('#landing_m').length > 0){
               map.panBy(0, -50);
+            }
 
             var content = '<div class="placeinfo"><a class="title_a" href="' +
                 place.place_url + '" target="_blank" title="' + place.place_name + '">' + place.place_name + '</a>';

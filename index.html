@@ -12,6 +12,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson','Windows Phone');
+    for (var word in mobileKeyWords){
+      if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+        location.href = "index_m.html";
+        break;
+      }
+    }
+  </script>
   <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
   <link href="css/interface-icons.css" rel="stylesheet" type="text/css" media="all"/>

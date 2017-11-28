@@ -80,14 +80,14 @@ body {
 .nav-bar .nav-module {
   padding: 0;
 }
-#landing .nav-container {
+#landing_m_m .nav-container {
   position: absolute;
   width: 100%;
   /*min-width: 320px;*/
   font-family: 'NotoSansCJKkr-Bold';
   font-size: 15px;
 }
-#landing nav {
+#landing_m nav {
   z-index: 10;
   min-height: 59px;
   opacity: 0.8;
@@ -99,11 +99,11 @@ body {
 .logo-module a:hover{
   cursor: pointer;
 }
-#landing section .boxed.float-left{
+#landing_m section .boxed.float-left{
   margin-left: 1.25em;
   padding-right: 0;
 }
-#landing section .boxed.float-right{
+#landing_m section .boxed.float-right{
   margin-right: 1.25em;
   padding-left: 0;
   padding-bottom: 0;
