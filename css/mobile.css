@@ -80,7 +80,7 @@ body {
 .nav-bar .nav-module {
   padding: 0;
 }
-#landing_m_m .nav-container {
+#landing_m .nav-container {
   position: absolute;
   width: 100%;
   /*min-width: 320px;*/
@@ -129,16 +129,15 @@ body {
 .sub_menu_line{
   margin-top: 14px !important;
 }
-section.space--smd,
+/*section.space--smd,
 footer.space--smd {
   padding-top: 6.04em;
   padding-bottom: 6.04em;
-}
+}*/
 .slider.height-48 {
   height: auto;
 }
 .slider.height-48 .slides li {
-  /*height: 470px;*/
   height: 484px;
   padding: 0;
 }

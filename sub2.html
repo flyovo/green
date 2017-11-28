@@ -19,7 +19,7 @@
   <link href="css/theme.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)" id="sub2">
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)" onunload="javascript:closeWin();" id="sub2">
   <div class="nav-container">
       <nav>
           <div class="nav-bar">
@@ -231,6 +231,9 @@
       $('#footer').load('footer.html');
       $('#modals').load('modals.html #contactus');
     })
+    function closeWin(){
+      //  sessionStorage.removeItem('show_pcIndex');
+    }
   </script>
 </body>
 </html>

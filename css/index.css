@@ -502,10 +502,14 @@ footer .btn_primary {
   width: 750px;
   max-width: 950px;
   left: -110px;
-  overflow: -webkit-paged-x;
+  /*overflow: -webkit-paged-x;*/
   overflow-x: scroll;
   white-space: nowrap;
   display: -webkit-box;
+  -ms-scrollbar-face-color: #50bb14;
+  -ms-scrollbar-track-color: white;
+  -ms-scrollbar-arrow-color: white;
+  -ms-scrollbar-shadow-color: white;
 }
 @media (min-width:1680px) {
   .has-scroll{
@@ -530,8 +534,10 @@ footer .btn_primary {
   background-color: #50bb14;
   cursor: pointer;
 }
+
 .scroll-table{
   display: -webkit-box;
+  display: -ms-flexbox;
 }
 .has-scroll .item{
   margin: 0 32px 36px 26px;
@@ -575,7 +581,7 @@ footer .btn_primary {
   line-height: normal;
   font-weight: 500;
   text-align: center;
-  display: table-caption;
+  /*display: table-caption;*/
 }
 .boxed img {
   margin-bottom: 0;

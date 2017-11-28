@@ -20,7 +20,7 @@
   <link href="css/map.css" rel="stylesheet" type="text/css" media="all">
   <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)" id="sub1">
+<body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax)" onunload="javascript:closeWin();" id="sub1">
   <div class="nav-container">
       <nav>
           <div class="nav-bar">
@@ -201,6 +201,9 @@
       $('#footer').load('footer.html');
       $('#modals').load('modals.html #contactus');
     })
+    function closeWin(){
+      //  sessionStorage.removeItem('show_pcIndex');
+    }
   </script>
   <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ce502e49e62690b7cf6f1e9538085820"></script>
   <script src="js/map.js"></script>
