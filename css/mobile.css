@@ -31,8 +31,7 @@ body {
   /*max-width: 320px;*/
 }
 .container {
-  /*width: 280px !important;*/
-  width: 270px !important;
+  width: 290px !important;
   padding-right: 0;
   padding-left: 0;
 
@@ -334,7 +333,7 @@ section{
   margin-bottom: 9px;
 }
 .has-scroll .item {
-  margin: 0 13px 30px 6.5px;
+  margin: 0 19px 30px 7px;
   position: relative;
   float: left;
   text-align: -webkit-center;
