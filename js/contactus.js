@@ -54,7 +54,7 @@ function sendEmail(){
     console.log(response);
     if (response == "Complete"){
       alert('문의가 접수되었습니다.')
-      if($('#landing_m').length > 0){
+      if($('#modal-m').length > 0){
         location.href='index_m.html';
       }else{
         $('#contactus').modal('hide');
