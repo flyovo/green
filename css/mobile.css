@@ -79,14 +79,17 @@ body {
 .nav-bar .nav-module {
   padding: 0;
 }
-#landing_m .nav-container {
-  position: absolute;
+.nav-container {
   width: 100%;
   /*min-width: 320px;*/
   font-family: 'NotoSansCJKkr-Bold';
   font-size: 15px;
 }
-#landing_m nav {
+#landing_m .nav-container {
+  position: absolute;
+}
+/*#landing_m nav {*/
+nav {
   z-index: 10;
   min-height: 59px;
   opacity: 0.8;
