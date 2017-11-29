@@ -53,7 +53,12 @@ function sendEmail(){
   $.ajax(settings).done(function (response) {
     console.log(response);
     if (response == "Complete"){
-      $('#contactus').modal('hide');
+      alert('문의가 접수되었습니다.')
+      if($('#landing_m').length > 0){
+        location.href='index_m.html';
+      }else{
+        $('#contactus').modal('hide');
+      }
     }
   });
 }
